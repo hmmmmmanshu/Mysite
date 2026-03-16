@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Himanshu Goswami",
@@ -16,17 +16,14 @@ export const DATA = {
 
 Founders spend a surprising amount of time on things that have nothing to do with building their company: searching for funding, filling forms, juggling tools. So I build systems around those problems.
 
-**Startup911**, **GrantSnap**, and **EERA** each solve a different part of the same workflow: discovery, applications, operations.`,
+[**Startup911**](https://www.startup911.in/), [**GrantSnap**](https://grantsnap.pro), and [**EERA**](https://eera-os.com) each solve a different part of the same workflow: discovery, applications, operations.`,
   whyIBuild: `Startups are already difficult. What makes them worse is the invisible operational friction around them.
 
 Founders spend weeks searching for opportunities, hours rewriting the same answers, days organizing information across disconnected tools. Most people accept this as normal.
 
 I prefer building things that make those processes simpler. Not because software magically fixes startups, but because founders should spend more time building and less time navigating broken systems.`,
-  avatarUrl: "/himanshu-profile.png",
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  avatarUrl: "/himanshu-profile.webp",
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "Founder@startup911.in",
     social: {

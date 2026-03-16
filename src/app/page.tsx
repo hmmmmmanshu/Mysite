@@ -35,26 +35,24 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-8 md:space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-3 sm:space-y-4 md:space-y-6">
-          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-6">
-            <div className="flex flex-col flex-1 space-y-4 sm:space-y-5 min-w-0">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none font-bold tracking-tighter leading-tight"
-                yOffset={8}
-                text={DATA.heroGreeting}
-              />
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <HeroDescription text={DATA.heroDescription} />
-              </BlurFade>
-            </div>
+        <div className="mx-auto w-full max-w-2xl space-y-2 sm:space-y-3 md:space-y-4">
+          <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
+            <BlurFadeText
+              delay={BLUR_FADE_DELAY}
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl/none font-bold tracking-tighter leading-tight flex-1 min-w-0"
+              yOffset={8}
+              text={DATA.heroGreeting}
+            />
             <BlurFade delay={BLUR_FADE_DELAY} className="flex-shrink-0">
-              <Avatar className="size-16 sm:size-20 md:size-24 lg:size-28 border">
+              <Avatar className="size-20 sm:size-24 md:size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <HeroDescription text={DATA.heroDescription} />
+          </BlurFade>
         </div>
       </section>
       <section id="about">
