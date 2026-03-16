@@ -7,33 +7,28 @@ export const DATA = {
   url: "https://himanshugoswami.com",
   location: "Chandigarh, India",
   locationLink: "https://www.google.com/maps/place/chandigarh",
+  heroGreeting: "Hi, I'm Himanshu.",
+  heroDescription:
+    "I like building things.\n\nSometimes they turn into startups.\nSometimes they become internal tools.\nSometimes they fail spectacularly and consume an unreasonable amount of Claude credits.\n\nMost of them start with the same trigger.\n\nSomething feels unnecessarily complicated.\n\nInstead of writing a long rant about it, I try to build a system that makes it simpler.\n\nThat approach has produced a few projects so far.\n\nYou'll find them below.",
   description:
-    "I prefer to be hands-on — either building things myself or staying in the front seat when they're being created.",
-  summary:
-    "I work at the intersection of startups, capital, and automation. I've helped early-stage founders raise non-dilutive capital, go from zero to one, and launch faster. I've built tools that save founders hundreds of hours — and I've done it all without a tech background.\n\n**What I Do Best**\nExecution, Not Theory. From building solo SaaS tools to leading investor strategy and automating GTM workflows, I move fast, learn in public, and ship real things.\n\n**Why I Build**\nI didn't wait for a job to start building. I got tired of messy spreadsheets, siloed DMs, and hours wasted on repetitive ops. So I built tools to fix them — for myself, for founders, and now for the ecosystem.",
+    "I like building things. Sometimes they turn into startups. Sometimes they become internal tools. Sometimes they fail spectacularly and consume an unreasonable amount of Claude credits.",
+  summary: `Most of my work sits at the intersection of founders, capital, and automation.
+
+Founders spend a surprising amount of time on things that have nothing to do with building their company: searching for funding, filling forms, juggling tools. So I build systems around those problems.
+
+**Startup911**, **GrantSnap**, and **EERA** each solve a different part of the same workflow: discovery, applications, operations.`,
+  whyIBuild: `Startups are already difficult. What makes them worse is the invisible operational friction around them.
+
+Founders spend weeks searching for opportunities, hours rewriting the same answers, days organizing information across disconnected tools. Most people accept this as normal.
+
+I prefer building things that make those processes simpler. Not because software magically fixes startups, but because founders should spend more time building and less time navigating broken systems.`,
   avatarUrl: "/himanshu-profile.png",
-  skills: [
-    "Financial Modeling",
-    "No-Code Tools",
-    "Fundraising Strategy",
-    "Venture Analysis",
-    "SQL",
-    "API Integration",
-    "Automation Design",
-    "Web3",
-    "Shopify",
-    "Excel",
-    "Power BI",
-    "Low-Code Automations",
-  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "Himanshu252003@gmail.com",
-    tel: "+91 6280298943",
-    cv: "https://drive.google.com/file/d/1WG2BnOi1VAo_Hd9_JIzVQ7-YiRe9SBYV/view?usp=sharing",
+    email: "Founder@startup911.in",
     social: {
       LinkedIn: {
         name: "LinkedIn",
@@ -47,51 +42,28 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
       },
-      email: {
-        name: "Send Email",
-        url: "mailto:Himanshu252003@gmail.com",
+      Email: {
+        name: "Email",
+        url: "mailto:Founder@startup911.in",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
-
+  contactSectionText:
+    "I spend most of my time building systems, experimenting with ideas, and occasionally writing about how startups actually operate.\n\nIf you are a founder, operator, or investor and want to exchange ideas, feel free to reach out.",
   work: [
     {
       company: "Acharya Ventures",
       href: "#",
-      badges: ["Founder's Office"],
+      badges: ["Entrepreneur in Residence"],
       location: "Remote",
-      title: "Founder's Office",
+      title: "Entrepreneur in Residence",
       logoUrl: "/acharya-ventures-logo.png",
       start: "November 2024",
       end: "Present",
       description:
-        "Led fundraising, built workflows with Make, automated blog ops, grant pipelines, investor outreach, and TikTok content experiments. Built the firm's first founder cohort, raised ₹50L+ in non-dilutive grants, and led venture studio operations.",
-    },
-    {
-      company: "Plansas",
-      href: "#",
-      badges: ["Financial Analysis"],
-      location: "Remote",
-      title: "Junior Financial Analyst",
-      logoUrl: "/plansas-logo.png",
-      start: "August 2024",
-      end: "Present",
-      description:
-        "Built 10+ DCFs and SaaS projection models for clients. Specialized in strategy docs and investor readiness. Remote financial analyst role at Estonia-based consulting company.",
-    },
-    {
-      company: "Iron Key Capital",
-      href: "#",
-      badges: ["Venture Analysis"],
-      location: "Remote",
-      title: "Venture Analyst",
-      logoUrl: "/iron-key-capital-logo.png",
-      start: "January 2024",
-      end: "Present",
-      description:
-        "Evaluated blockchain startups, scouted founders, contributed to deal memos and pitch filters. Collaborated with founders in Web3 & Cryptocurrency space.",
+        "At Acharya Ventures I design and build internal systems that support founders inside the venture studio. This includes building EERA, the firm's AI powered founder operating system, along with automation infrastructure for fundraising pipelines, founder research, and operational workflows. The focus is always the same. Reduce friction so founders can move faster.",
     },
     {
       company: "ERDC",
@@ -103,7 +75,7 @@ export const DATA = {
       start: "June 2023",
       end: "December 2023",
       description:
-        "Traveled across 6+ Indian states, worked with 5000+ students and 500 village heads to bring grassroots entrepreneurship into policy focus. Collaborated with 9 IITs and IIMs for residential bootcamps for young entrepreneurs.",
+        "At ERDC I worked on grassroots entrepreneurship programs across multiple Indian states. The work involved interacting with students, local leaders, and early stage entrepreneurs to understand how innovation develops outside traditional startup ecosystems. It was one of my first exposures to how uneven access to resources can be for founders. And how much entrepreneurial potential exists beyond the usual startup hubs.",
     },
   ],
   education: [
@@ -116,25 +88,17 @@ export const DATA = {
       end: "2023",
     },
   ],
+  projectsIntro:
+    "Most of the things below started as small experiments. Some grew into full platforms. Some are still evolving. A few exist purely because I refused to fill the same form twice.",
   projects: [
     {
       title: "Startup911",
       href: "https://www.startup911.in/",
-      dates: "2023 - Present",
+      dates: "2025 to Present",
       active: true,
       description:
-        "A platform for founders to discover, track, and apply for grants and investor capital — powered by automation. Built solo with Supabase, Airtable, and Make. Currently manage more than 100 grants and 1000 investors data.",
-      technologies: [
-        "Supabase",
-        "Airtable",
-        "APIs",
-        "Make",
-        "Automation",
-        "Fundraising",
-        "Grant Discovery",
-        "No-Code Tools",
-        "Data Management",
-      ],
+        "Startup911 is a discovery engine for startup funding opportunities.\n\nGrants, fellowships, and investor programs exist all over the internet. The problem is that they are scattered and difficult to track.\n\nStartup911 aggregates and organizes these opportunities so founders can discover relevant funding sources much faster.\n\nToday the platform tracks:\n\n- 100+ active grants\n- 1000+ investors and funding programs\n\nAlongside the platform we also run the Startup911 Opportunity Newsletter, which sends curated opportunities to founders.\n\nAs of 17 March 2026:\n\n- 200+ subscribers\n- Around 60 percent open rate\n- Around 20 percent click rate\n- Around 60 percent of readers are international\n\nThe goal is simple.\n\nHelp founders spend less time searching for opportunities and more time building.\n\nSmall note.\nIf you have ever opened twenty browser tabs trying to find grants, you probably understand why this exists.",
+      technologies: ["Discovery", "Grants", "Funding", "Newsletter"],
       links: [
         {
           type: "Platform",
@@ -143,60 +107,33 @@ export const DATA = {
         },
       ],
       image: "/startup911-logo.png",
-      video: "",
-      gif: "/startup911-demo.gif",
+      video: "/Starup911Walkaround.mp4",
+      gif: "",
     },
     {
-      title: "Thoughtly",
-      href: "https://thoughtly.pro/",
-      dates: "2024 - Present",
+      title: "GrantSnap",
+      href: "https://grantsnap.pro",
+      dates: "2025 to Present",
       active: true,
       description:
-        "A personal reflection layer for AI users. Syncs your AI chats and lets you trace your thinking over time. Built with Chat Sync APIs, Supabase, and Frontend in Vite/React.",
-      technologies: [
-        "Chat Sync APIs",
-        "Supabase",
-        "Vite/React",
-        "AI Productivity",
-        "Reflection Tools",
-        "Founder Workflow",
-        "Mental Models",
-      ],
-      links: [
-        {
-          type: "Platform",
-          href: "https://thoughtly.pro/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/thoughtly-logo.png",
-      video: "",
-      gif: "/thoughtly-demo.gif",
+        "GrantSnap is the execution layer built on top of Startup911.\n\nDiscovering opportunities is only half the battle.\n\nThe real friction begins during applications.\n\nMost grants and accelerator forms ask very similar questions. Yet founders end up rewriting the same answers again and again.\n\nGrantSnap helps automate that process.\n\nUsing structured founder data and AI, it generates and fills application responses directly inside funding forms.\n\nThe goal is to help founders apply up to 10 times faster while keeping their narrative consistent across applications.\n\nInstead of rewriting answers for hours, founders can focus on improving the actual substance of their startup.\n\nFun fact.\n\nGrantSnap mostly exists because I once rewrote the same grant answer fourteen times in a single week.",
+      technologies: ["AI", "Applications", "Automation"],
+      links: [],
+      image: "/startup911-logo.png",
+      video: "/GrantsnapWalkaround.mp4",
+      gif: "",
     },
     {
-      title: "Hidden Art Works",
-      href: "#",
-      dates: "2021 - 2022",
-      active: false,
+      title: "EERA",
+      href: "https://eera-os.com",
+      dates: "2026 to Present",
+      active: true,
       description:
-        "A marketplace for offline creators. Converted local art into NFTs with blockchain-native copyright. Built with Shopify and OpenSea integration.",
-      technologies: [
-        "Shopify",
-        "OpenSea",
-        "Blockchain",
-        "E-commerce",
-        "NFTs",
-        "Creator Economy",
-      ],
-      links: [
-        {
-          type: "Marketplace",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/hidden-art-works-logo.png",
-      video: "",
+        "Built at Acharya Ventures\n\nEERA is an AI powered Founder Operating System developed inside Acharya Ventures.\n\nIt connects multiple systems founders normally manage separately.\n\n- Opportunity discovery\n- Research tools\n- Internal founder workflows\n- Operational automation\n\nThe idea behind EERA is straightforward.\n\nEarly stage founders should not need large teams just to manage operational complexity.\n\nWith the right systems, many of these processes can run quietly in the background.\n\nEERA was built to provide that operational backbone inside the venture studio.",
+      technologies: ["AI", "Founder OS", "Automation"],
+      links: [],
+      image: "/acharya-ventures-logo.png",
+      video: "/EERA%20WALKAROUND.mp4",
       gif: "",
     },
     {
@@ -214,71 +151,10 @@ export const DATA = {
         "Digital Menu",
         "Contactless Ordering",
       ],
-      links: [
-        {
-          type: "Platform",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/von-horizon-logo.png",
+      links: [],
+      image: "",
       video: "",
       gif: "",
-    },
-  ],
-  certifications: [
-    {
-      title: "Excel Financial Modeling and Valuations",
-      issuer: "PWC",
-      date: "2023",
-      description: "Comprehensive training in financial modeling and business valuations using Excel.",
-    },
-    {
-      title: "Analyzing and Visualizing Data with Microsoft Power BI",
-      issuer: "PWC",
-      date: "2023",
-      description: "Advanced data analysis and visualization techniques using Power BI.",
-    },
-    {
-      title: "Venture Capital Certification",
-      issuer: "H2 Ventures",
-      date: "2023",
-      description: "Specialized certification in venture capital investment and startup evaluation.",
-    },
-    {
-      title: "Work-Flow Automations No Code – Low Code AI Platforms",
-      issuer: "Various",
-      date: "2023",
-      description: "Expertise in no-code and low-code automation platforms for business process optimization.",
-    },
-  ],
-  hackathons: [
-    {
-      title: "Global Shapers World Economic Forum",
-      dates: "2023 - Present",
-      location: "Global",
-      description:
-        "Promoted to Impact Officer. Member of the Global Shapers Community, contributing to the World Economic Forum's mission of improving the state of the world.",
-      image: "/global-shapers-logo.png",
-      links: [],
-    },
-    {
-      title: "AIESEC Chandigarh",
-      dates: "2022 - 2023",
-      location: "Chandigarh, India",
-      description:
-        "Volunteered with AIESEC Chandigarh, contributing to youth leadership development and international exchange programs.",
-      image: "/aiesec-logo.png",
-      links: [],
-    },
-    {
-      title: "Leo Club Chandigarh",
-      dates: "2021 - 2023",
-      location: "Chandigarh, India",
-      description:
-        "Active member of Leo Club Chandigarh, participating in community service and leadership development activities.",
-      image: "/leo-club-logo.png",
-      links: [],
     },
   ],
 } as const;

@@ -56,6 +56,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "easter-egg": {
+          DEFAULT: "hsl(var(--easter-egg))",
+          foreground: "hsl(var(--easter-egg-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
