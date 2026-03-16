@@ -35,7 +35,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-8 md:space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-2 sm:space-y-3 md:space-y-4">
+        <div className="mx-auto w-full max-w-2xl space-y-0.5 sm:space-y-1">
           <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
             <BlurFadeText
               delay={BLUR_FADE_DELAY}

@@ -64,6 +64,16 @@ export function ProjectCard({
     >
       {(video || gif || image) && (
         <div className="relative w-full aspect-video !border-0 overflow-hidden bg-card [&_video]:bg-card">
+          {href && href !== "#" ? (
+            <Link
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="absolute inset-0 z-10 block cursor-pointer"
+              aria-label={`Open ${title}`}
+            />
+          ) : null}
           {video && (
             <video
               src={video}
@@ -81,7 +91,7 @@ export function ProjectCard({
               alt={title}
               width={500}
               height={300}
-              className="absolute inset-0 w-full h-full object-cover !border-0"
+              className="absolute inset-0 w-full h-full object-cover !border-0 pointer-events-none"
             />
           )}
           {image && !gif && !video && (
@@ -90,7 +100,7 @@ export function ProjectCard({
               alt={title}
               width={500}
               height={300}
-              className="absolute inset-0 w-full h-full object-cover !border-0"
+              className="absolute inset-0 w-full h-full object-cover !border-0 pointer-events-none"
             />
           )}
         </div>

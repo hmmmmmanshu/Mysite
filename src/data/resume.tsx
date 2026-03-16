@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/chandigarh",
   heroGreeting: "Hi, I'm Himanshu.",
   heroDescription:
-    "I like building things.\n\nSometimes they turn into startups.\nSometimes they become internal tools.\nSometimes they fail spectacularly and consume an unreasonable amount of Claude credits.\n\nMost of them start with the same trigger.\n\nSomething feels unnecessarily complicated.\n\nInstead of writing a long rant about it, I try to build a system that makes it simpler.\n\nThat approach has produced a few projects so far.\n\nYou'll find them below.",
+    "I like building things.\n\nSometimes they turn into startups.\nSometimes they become internal tools.\nSometimes they fail spectacularly and consume an unreasonable amount of Claude credits.\n\nMost of them start with the same trigger: something feels unnecessarily complicated.\n\nInstead of writing a long rant about it, I try to build a system that makes it simpler. That approach has produced a few projects so far. You'll find them below.",
   description:
     "I like building things. Sometimes they turn into startups. Sometimes they become internal tools. Sometimes they fail spectacularly and consume an unreasonable amount of Claude credits.",
   summary: `Most of my work sits at the intersection of founders, capital, and automation.
