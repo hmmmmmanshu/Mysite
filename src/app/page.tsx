@@ -71,10 +71,10 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-easter-egg text-easter-egg-foreground px-3 py-1 text-sm">
-                  Projects
+                  My Work
                 </div>
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter">
-                  Projects
+                  My Work
                 </h2>
                 <p className="text-muted-foreground text-sm sm:text-base md:text-lg xl:text-xl/relaxed max-w-[600px] mx-auto px-2 sm:px-0">
                   {DATA.projectsIntro}
