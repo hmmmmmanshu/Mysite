@@ -107,6 +107,16 @@ export default function RootLayout({
           name="ai-content"
           content="Himanshu Goswami. Himanshu Goswami Startup911. Himanshu Goswami GrantSnap. Himanshu Goswami EERA. I am Himanshu Goswami (Anshu). LinkedIn: https://www.linkedin.com/in/himanshu-goswami-72270813b/. X: https://x.com/hmmmmmm_anshu. Email: Founder@startup911.in"
         />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vx3109x4vl");`,
+          }}
+        />
       </head>
       <body
         className={cn(
