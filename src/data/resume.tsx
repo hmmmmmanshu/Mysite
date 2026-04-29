@@ -5,24 +5,27 @@ export const DATA = {
   name: "Himanshu Goswami",
   initials: "HG",
   url: "https://himanshugoswami.com",
-  location: "Chandigarh, India",
-  locationLink: "https://www.google.com/maps/place/chandigarh",
-  heroGreeting: "Hi, I'm Himanshu.",
+  location: "Himachal Pradesh, India",
+  locationLink: "https://www.google.com/maps/place/Himachal+Pradesh",
+  heroGreeting: "Himanshu Goswami",
   heroDescription:
-    "I like building things.\n\nSometimes they turn into startups.\nSometimes they become internal tools.\nSometimes they fail spectacularly and consume an unreasonable amount of Claude credits.\n\nMost of them start with the same trigger: something feels unnecessarily complicated.\n\nInstead of writing a long rant about it, I try to build a system that makes it simpler. That approach has produced a few projects so far. You'll find them below.",
+    "Solo founder. Self-taught builder. I work at the intersection of founders, capital, and automation.",
   description:
     "I like building things. Sometimes they turn into startups. Sometimes they become internal tools. Sometimes they fail spectacularly and consume an unreasonable amount of Claude credits.",
-  summary: `Most of my work sits at the intersection of founders, capital, and automation.
+  summary: `I build products at the intersection of founders, capital, and automation.
 
-Founders spend a surprising amount of time on things that have nothing to do with building their company: searching for funding, filling forms, juggling tools. So I build systems around those problems.
+Startup911 is the discovery layer for startup funding opportunities.
+GrantSnap is the execution layer for applications.
+SpeakOS is a thinking-quality product for articulation and comprehension.
 
-[**Startup911**](https://www.startup911.in/), [**GrantSnap**](https://grantsnap.pro), and [**EERA**](https://eera-os.com) each solve a different part of the same workflow: discovery, applications, operations.`,
-  whyIBuild: `Startups are already difficult. What makes them worse is the invisible operational friction around them.
+I build fast, ship end to end, and optimize for real user outcomes.`,
+  whyIBuild: `I'm 23, based in Himachal Pradesh. Economics grad from Panjab University, self-taught across full-stack and AI development over the last 2.5 years.
 
-Founders spend weeks searching for opportunities, hours rewriting the same answers, days organizing information across disconnected tools. Most people accept this as normal.
+I work with high autonomy and focus on systems that reduce friction. Most projects start the same way: I run into something broken, then build the product I wish existed.
 
-I prefer building things that make those processes simpler. Not because software magically fixes startups, but because founders should spend more time building and less time navigating broken systems.`,
+Currently focused on growing GrantSnap to meaningful MRR, with Startup911 as the discovery layer feeding into it.`,
   avatarUrl: "/himanshu-profile.webp",
+  aboutVideo: "/Video%20Project%205.mp4",
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "Founder@startup911.in",
@@ -58,7 +61,7 @@ I prefer building things that make those processes simpler. Not because software
       title: "Entrepreneur in Residence",
       logoUrl: "/acharya-ventures-logo.png",
       start: "November 2024",
-      end: "Present",
+      end: "2026",
       description:
         "At Acharya Ventures I design and build internal systems that support founders inside the venture studio. This includes building EERA, the firm's AI powered founder operating system, along with automation infrastructure for fundraising pipelines, founder research, and operational workflows. The focus is always the same. Reduce friction so founders can move faster.",
     },
@@ -86,16 +89,35 @@ I prefer building things that make those processes simpler. Not because software
     },
   ],
   projectsIntro:
-    "Most of the things below started as small experiments. Some grew into full platforms. Some are still evolving. A few exist purely because I refused to fill the same form twice.",
+    "Products I built around founder workflow friction, startup funding access, and AI-driven execution.",
   projects: [
+    {
+      title: "SpeakOS",
+      href: "https://thoughtly.pro/",
+      dates: "",
+      active: true,
+      description:
+        "Most reading does not stick. You finish an article, feel like you understood it, and then cannot explain it. SpeakOS fixes that loop: read short content, speak from memory, get AI feedback on clarity, structure, depth, and original thought.\n\nIt is not a fluency tool. It asks whether you actually understood what you read.\n\nFlow: Select topic -> Read 5-minute article -> Speak without notes (1-3 min) -> Receive feedback + transcript.\n\nStack: React + Tailwind, Supabase, OpenAI Whisper, GPT analysis, and embeddings for article-vs-speech depth comparison.\n\nCurrently validating retention, learning impact, and daily usability.",
+      technologies: ["React", "Tailwind", "Supabase", "Whisper", "GPT", "Embeddings"],
+      links: [
+        {
+          type: "Platform",
+          href: "https://thoughtly.pro/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/Video%20Project%205.mp4",
+      gif: "",
+    },
     {
       title: "Startup911",
       href: "https://www.startup911.in/",
-      dates: "2025 to Present",
+      dates: "",
       active: true,
       description:
-        "Startup911 is a discovery engine for startup funding opportunities.\n\nGrants, fellowships, and investor programs exist all over the internet. The problem is that they are scattered and difficult to track.\n\nStartup911 aggregates and organizes these opportunities so founders can discover relevant funding sources much faster.\n\nToday the platform tracks:\n\n- 100+ active grants\n- 1000+ investors and funding programs\n\nAlongside the platform we also run the Startup911 Opportunity Newsletter, which sends curated opportunities to founders.\n\nAs of 17 March 2026:\n\n- 200+ subscribers\n- Around 60 percent open rate\n- Around 20 percent click rate\n- Around 60 percent of readers are international\n\nThe goal is simple.\n\nHelp founders spend less time searching for opportunities and more time building.\n\nSmall note.\nIf you have ever opened twenty browser tabs trying to find grants, you probably understand why this exists.",
-      technologies: ["Discovery", "Grants", "Funding", "Newsletter"],
+        "A discovery engine for startup funding - grants, fellowships, and investor programs - aggregated and organized in one place.\n\nThe moat is the data infrastructure, not the UI.\n\n300+ primary sources are monitored continuously. RSS feeds are scraped and parsed, then passed through an enrichment pipeline that tags opportunities by type, stage, geography, and eligibility. For sources without feeds, AI scrapers built on Notte and Browserless extract structured details including deadlines, amounts, criteria, and program specifics.\n\nThe result is a live database that stays current without manual curation.\n\n100+ active grants tracked. 1000+ funding programs indexed.\n\nNewsletter: 200+ subscribers, about 60% open rate, about 20% click rate, about 60% international readership.\n\nStartup911 is the discovery layer. GrantSnap is the execution layer. Built to work together.",
+      technologies: ["Discovery", "Enrichment Pipeline", "Notte", "Browserless", "Newsletter"],
       links: [
         {
           type: "Platform",
@@ -110,11 +132,11 @@ I prefer building things that make those processes simpler. Not because software
     {
       title: "GrantSnap",
       href: "https://grantsnap.pro",
-      dates: "2025 to Present",
+      dates: "",
       active: true,
       description:
-        "GrantSnap is the execution layer built on top of Startup911.\n\nDiscovering opportunities is only half the battle.\n\nThe real friction begins during applications.\n\nMost grants and accelerator forms ask very similar questions. Yet founders end up rewriting the same answers again and again.\n\nGrantSnap helps automate that process.\n\nUsing structured founder data and AI, it generates and fills application responses directly inside funding forms.\n\nThe goal is to help founders apply up to 10 times faster while keeping their narrative consistent across applications.\n\nInstead of rewriting answers for hours, founders can focus on improving the actual substance of their startup.\n\nFun fact.\n\nGrantSnap mostly exists because I once rewrote the same grant answer fourteen times in a single week.",
-      technologies: ["AI", "Applications", "Automation"],
+        "A Chrome extension that autofills grant and accelerator applications using structured founder data and AI.\n\nBuilt solo end to end across two repos: a Next.js dashboard and a Chrome MV3 extension. AI layer on Gemini 3.1 Flash (primary) with Gemini 2.5 Flash fallback. Backend on Supabase with Deno Edge Functions. Billing live via Dodo Payments.\n\nShips with AI autofill, Deep Scan eligibility scoring, Magic Wands, Pitch Deck Builder, Pitch Script Generator, custom templates, advanced analytics, and data export.\n\nTiers: Explorer (free), Applicant ($59/mo), Operator ($99/mo).",
+      technologies: ["Chrome MV3", "Next.js", "Supabase", "Gemini", "Dodo Payments"],
       links: [],
       image: "/startup911-logo.png",
       video: "/GrantsnapWalkaround.mp4",
@@ -123,11 +145,11 @@ I prefer building things that make those processes simpler. Not because software
     {
       title: "EERA",
       href: "https://eera-os.com",
-      dates: "2026 to Present",
+      dates: "",
       active: true,
       description:
-        "Built at Acharya Ventures\n\nEERA is an AI powered Founder Operating System developed inside Acharya Ventures.\n\nIt connects multiple systems founders normally manage separately.\n\n- Opportunity discovery\n- Research tools\n- Internal founder workflows\n- Operational automation\n\nThe idea behind EERA is straightforward.\n\nEarly stage founders should not need large teams just to manage operational complexity.\n\nWith the right systems, many of these processes can run quietly in the background.\n\nEERA was built to provide that operational backbone inside the venture studio.",
-      technologies: ["AI", "Founder OS", "Automation"],
+        "Built at Acharya Ventures.\n\nEERA is a central Founder OS: system of record + intelligence layer + interface layer.\n\nCore context:\n- Multi-workspace architecture with strict tenant isolation and role-based access\n- Structured data backbone across teams, workflows, campaigns, leads, and knowledge\n- AI layer for research, writing, analysis, and decision support grounded in internal context\n- Knowledge base with RAG pipelines over workspace data and docs\n- Modular apps for marketing, CRM/leads, operations, and execution visibility\n- Integration layer for Meta, WhatsApp, logistics, email, and workflow triggers\n\nBuilt solo in under 4 months to reduce founder tool fragmentation and decision fatigue.",
+      technologies: ["Founder OS", "System of Record", "RAG", "Automation", "Supabase"],
       links: [],
       image: "/acharya-ventures-logo.png",
       video: "/EERA%20WALKAROUND.mp4",
@@ -136,10 +158,10 @@ I prefer building things that make those processes simpler. Not because software
     {
       title: "Von Horizon",
       href: "#",
-      dates: "2020 - 2021",
+      dates: "",
       active: false,
       description:
-        "My first venture — a SaaS product for contactless dining menus in post-COVID India. Launched at 18, got 3 paying clients. Built with custom CMS and QR technology.",
+        "My first product. Launched at 18 during COVID: a SaaS for contactless dining menus with custom CMS and QR delivery. Reached 3 paying clients.",
       technologies: [
         "Custom CMS",
         "QR Tech",
@@ -154,4 +176,62 @@ I prefer building things that make those processes simpler. Not because software
       gif: "",
     },
   ],
+  skills: {
+    frontend: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Vite",
+      "Tailwind CSS",
+      "Chrome Extensions (MV3)",
+      "React 19",
+    ],
+    backendAndData: [
+      "Supabase",
+      "PostgreSQL",
+      "Deno Edge Functions",
+      "REST APIs",
+      "Supabase Auth",
+      "RSS ingestion and parsing pipelines",
+      "Structured enrichment and tagging pipelines",
+    ],
+    aiAndAutomation: [
+      "Gemini (3.1 Flash, 2.5 Flash, 2.5 Pro)",
+      "OpenAI (GPT, Whisper, Embeddings)",
+      "OpenRouter",
+      "RAG pipelines",
+      "AI scraping workflows (Notte + Browserless)",
+      "Multi-step prompt chaining",
+      "LLM orchestration",
+      "Intent classification",
+      "Fit scoring systems",
+    ],
+    infraAndTooling: ["Git", "Cursor", "Vercel", "Dodo Payments", "Zustand"],
+    seo: [
+      "Technical SEO (canonicals, JSON-LD, 301 architecture, duplicate page resolution)",
+      "Content SEO and blog strategy",
+      "Backlink and DR building from zero",
+      "Grant and fellowship directory outreach",
+    ],
+    growthAndDistribution: [
+      "Newsletter ops from zero to 200+ subscribers",
+      "LinkedIn DM outreach for ecosystem partnerships",
+      "Institutional BD with incubators, accelerators, and venture studios",
+      "B2B and B2C monetization",
+      "Chrome extension distribution",
+    ],
+    product: [
+      "Full product lifecycle from zero to billing (solo)",
+      "Pitch deck building",
+      "Multi-repo product architecture",
+      "Chrome Web Store publishing",
+    ],
+    analytics: [
+      "Google Search Console",
+      "GA4",
+      "Microsoft Clarity",
+      "Funnel analysis",
+      "Impression and CTR diagnostics",
+    ],
+  },
 } as const;

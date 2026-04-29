@@ -9,7 +9,7 @@ import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const HERO_ACCENT_PHRASES = ["unreasonable", "Claude credits"];
+const HERO_ACCENT_PHRASES: string[] = [];
 
 function HeroDescription({ text }: { text: string }) {
   const regex = new RegExp(`(${HERO_ACCENT_PHRASES.join("|")})`, "gi");
@@ -32,6 +32,17 @@ function HeroDescription({ text }: { text: string }) {
 }
 
 export default function Page() {
+  const skillSections = [
+    { title: "Frontend", items: DATA.skills.frontend },
+    { title: "Backend & Data", items: DATA.skills.backendAndData },
+    { title: "AI & Automation", items: DATA.skills.aiAndAutomation },
+    { title: "Infra & Tooling", items: DATA.skills.infraAndTooling },
+    { title: "SEO", items: DATA.skills.seo },
+    { title: "Growth & Distribution", items: DATA.skills.growthAndDistribution },
+    { title: "Product", items: DATA.skills.product },
+    { title: "Analytics", items: DATA.skills.analytics },
+  ] as const;
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-6 sm:space-y-8 md:space-y-10">
       <section id="hero">
@@ -55,16 +66,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose prose-base sm:prose-lg max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert prose-p:leading-relaxed prose-p:mb-4 last:prose-p:mb-0">
-            {DATA.summary}
-          </Markdown>
-        </BlurFade>
-      </section>
       <section id="projects" className="!border-0">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -73,9 +74,6 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-easter-egg text-easter-egg-foreground px-3 py-1 text-sm">
                   My Work
                 </div>
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tighter">
-                  My Work
-                </h2>
                 <p className="text-muted-foreground text-sm sm:text-base md:text-lg xl:text-xl/relaxed max-w-[600px] mx-auto px-2 sm:px-0">
                   {DATA.projectsIntro}
                 </p>
@@ -105,20 +103,49 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="why-i-build">
-        <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <h2 className="text-xl font-bold">Why I Build</h2>
+      <section id="about">
+        <BlurFade delay={BLUR_FADE_DELAY * 3}>
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">About</h2>
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 8}>
-          <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert whitespace-pre-line">
-            {DATA.whyIBuild}
-          </p>
+        <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <div className="space-y-4">
+            <Markdown className="prose prose-base sm:prose-lg max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert prose-p:leading-relaxed prose-p:mb-4 last:prose-p:mb-0">
+              {DATA.summary}
+            </Markdown>
+            <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert whitespace-pre-line">
+              {DATA.whyIBuild}
+            </p>
+          </div>
         </BlurFade>
       </section>
-      <section id="work">
+      <section id="skills">
+        <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <h2 className="text-xl font-bold">Skills &amp; Stack</h2>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <div className="mt-3 space-y-2">
+            {skillSections.map((section) => (
+              <details
+                key={section.title}
+                className="group rounded-lg border bg-card/40 px-4 py-3"
+              >
+                <summary className="cursor-pointer list-none font-medium text-sm sm:text-base flex items-center justify-between">
+                  <span>{section.title}</span>
+                  <span className="text-xs text-muted-foreground group-open:hidden">Expand</span>
+                  <span className="text-xs text-muted-foreground hidden group-open:inline">Collapse</span>
+                </summary>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                  {section.items.join(" · ")}
+                </p>
+              </details>
+            ))}
+          </div>
+        </BlurFade>
+      </section>
+      <section id="experience">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">Experience</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 10}>
             <p className="text-sm text-muted-foreground mb-4">

@@ -20,7 +20,7 @@ interface Props {
   title: string;
   href?: string;
   description: string;
-  dates: string;
+  dates?: string;
   tags: readonly string[];
   link?: string;
   image?: string;
@@ -117,7 +117,7 @@ export function ProjectCard({
                 )}
               />
             </CardTitle>
-            <time className="font-sans text-xs">{dates}</time>
+            {dates ? <time className="font-sans text-xs">{dates}</time> : null}
           </div>
           {href && href !== "#" && (
             <Link
